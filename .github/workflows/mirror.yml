@@ -1,6 +1,7 @@
 name: gitee
 
 on:
+  workflow_dispatch:
   push:
   watch:
     types: started
