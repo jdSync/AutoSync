@@ -17,7 +17,7 @@ jobs:
           src: ${{ secrets.src }}
           dst: ${{ secrets.dst }}
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-          dst_token: ${{ secrets.ACTION_SECRET }}
+          dst_token: ${{ secrets.dst_token }}
           account_type: org
           timeout: '1h'
           debug: true
