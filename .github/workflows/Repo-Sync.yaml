@@ -1,4 +1,4 @@
-name: Repo Sync
+name: repo
 
 on:
   workflow_dispatch:

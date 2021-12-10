@@ -20,7 +20,7 @@ jobs:
         uses: jdSync/git-auto-commit-action@v4
         with:
           commit_message: Keep Alive
-          skip_dirty_check: {{ secrets.skip_dirty_check }}
-          commit_user_name: {{ secrets.commit_user_name }}
+          skip_dirty_check: ${{ secrets.skip_dirty_check }}
+          commit_user_name: ${{ secrets.commit_user_name }}
           commit_user_email: ${{ secrets.commit_user_email }}
           commit_author: ${{ secrets.commit_author }}
