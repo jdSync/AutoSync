@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: 'Apocalypsor/Workflows-Cleaner'
+          repository: 'jdsync/Workflows-Cleaner'
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
