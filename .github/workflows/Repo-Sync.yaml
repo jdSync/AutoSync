@@ -218,11 +218,6 @@ jobs:
           bash Scripts/Sync.sh \
             https://github.com/SuMaiKaDe/bot main \
             https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/jdSync/JD-Bot
-      - name: JDHelloWorld
-        run: |
-          bash Scripts/Sync.sh \
-            https://github.com/JDHelloWorld/jd_scripts main \
-            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/jdSync/jd-scripts ts2js
       - name: hundun
         run: |
           bash Scripts/Sync.sh \
@@ -313,7 +308,11 @@ jobs:
           bash Scripts/Sync.sh \
             https://github.com/X1a0He/jd_scripts_fixed main \
             https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/jdSync/X1a0He
-
+      - name: JDHelloWorld
+        run: |
+          bash Scripts/Sync.sh \
+            https://github.com/JDHelloWorld/jd_scripts main \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/jdSync/jd_scripts
   vpay:
     runs-on: ubuntu-latest
     steps:
